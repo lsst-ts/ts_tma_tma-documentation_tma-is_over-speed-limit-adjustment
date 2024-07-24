@@ -1,10 +1,10 @@
 # TMA-IS Over Speed Limit Adjustment
 
-| **Requested by:** | **AURA** |
-|-------------------|----------|
+| **Requested by:** | **AURA**              |
+|-------------------|-----------------------|
 | **Doc. Code**     | #{documentCode}       |
-| **Editor:**       | A. Izpizua         |
-| **Approved by:**  | J. García         |
+| **Editor:**       | A. Izpizua            |
+| **Approved by:**  | J. García             |
 
 ## Index
 
@@ -145,6 +145,6 @@ To change the safety speed limits proceed with steps.
 The values must be inside a range. This range was defined by AURA, but they do not ensure that the values inside this limits are totally safe for the camera. Please check the allowed maximun values in each situation
 
 | Axis      | Velocity per unit | Allowed Max. value | Equivalent Maximum Velocity | Allowed Min. value | Equivalent Minimum Velocity |
-| --------- | -------------------- | ---------------------- | ----------------------------- | ---------------------- | ---------------------------- |
-| Azimuth   | 0.36 deg/s           | 28                     | 10.08 deg/s                   | 2                      | 0.72 deg/s                   |
-| Elevation | 1.44 deg/s           | 4                      | 5.76 deg/s                    | 1                      | 1.44 deg/s                   |
+| --------- | ----------------- | ------------------ | --------------------------- | ------------------ | --------------------------- |
+| Azimuth   | 0.36 deg/s        | 28                 | 10.08 deg/s                 | 2                  | 0.72 deg/s                  |
+| Elevation | 1.44 deg/s        | 4                  | 5.76 deg/s                  | 1                  | 1.44 deg/s                  |
