@@ -18,7 +18,7 @@
 
 ## Introduction
 
-This document shows how to change the maximun allowed speed for azimuth and elevation in the TMA IS.
+This document shows how to change the maximum allowed speed for azimuth and elevation in the TMA IS.
 
 ### Symbols used in the Document
 
@@ -104,45 +104,49 @@ This document shows how to change the maximun allowed speed for azimuth and elev
 
 - 🛑 **PERSONNEL THAT PROCEED WITH THIS INSTRUCTIONS MUST BE QUALIFIED OR INSTRUCTED PERSONNEL WHO HAVE BEEN GIVEN SPECIFIC TRAINING IN THE USE OF THE PAS4000 SOFTWARE AND THE PROCEDURES DESCRIBED IN THIS DOCUMENT, INCLUDING ITS HAZARDS, THE SAFETY MEASURES TO BE TAKEN AND OBSERVED, AS WELL AS THE PERSONAL PROTECTIVE EQUIPMENT TO BE USED AND THE ACTIONS THAT MUST NOT BE CARRIED OUT.**
 - 🛑 **PERSONNEL USING THIS SOFTWARE MUST BE AWARE OF EACH AND EVERY RISK ASSOCIATED WITH EACH ACTION.**
-- 🛑 **BEFORE PERFORMING ANY ACTION TAKE THE NECESSARY SAFETY ACTIONS TO MANTEIN PEOPLE, INSTRUMENTS AND TELESCOPE SAFE**
+- 🛑 **BEFORE PERFORMING ANY ACTION TAKE THE NECESSARY SAFETY ACTIONS TO MAINTAIN PEOPLE, INSTRUMENTS AND TELESCOPE SAFE**
 
 ## Changing the safety speed limits
 
-
 To change the safety speed limits proceed with steps.
 
-1. Find the PAS4000 program in windows
-![Find PAS400](resources/FindPass4000.png)
+- Find the PAS4000 program in windows
 
-1. Activate the TMA IS project
-![Activate Project](resources/ActivateProject.png)
+  ![Find PAS400](resources/FindPass4000.png)
 
-1. Enter credentials.                       
-![Log In](resources/LogIn.png)
+- Activate the TMA IS project
 
-1. Open the "Variable Lists" item
-![Open Variable Lists](resources/VariableList.png)
+  ![Activate Project](resources/ActivateProject.png)
 
-1. The desired variable list can be opened clicking on it (red) and to start monitorin data the play button must be pressed (blue).
+- Enter credentials.
 
-   1. To manage azimuth open the AZ_BrakesInividually variable list
-   2. To manage elevation open the EL_BrakesInividually variable list
+  ![Log In](resources/LogIn.png)
+
+- Open the "Variable Lists" item
+
+  ![Open Variable Lists](resources/VariableList.png)
+
+- The desired variable list can be opened clicking on it (red) and to start monitorin data the play button must be pressed (blue).
+  - To manage azimuth open the AZ_BrakesInividually variable list
+  - To manage elevation open the EL_BrakesInividually variable list
+
       ![Open Desired Variables](resources/OpenDesiredVariableList.png)
 
-1. Find the variable to change MAXSPEED. 🛑 **THE VALUE INSERTED HERE COULD BE DANGEROUS FOR THE TELESCOPE OR FOR PEOPLE.**
+- Find the variable to change `MAXSPEED`. 🛑 **THE VALUE INSERTED HERE COULD BE DANGEROUS FOR THE TELESCOPE OR FOR PEOPLE.**
+- Double click in the "Force/control value" column. Then change the value to the desired one in the red box, and click "Control Now" button (blue). Check the valid values in the table shown in [Speed Limit Valid Values](#speed-limit-valid-values) section.
 
-1. Double click in the "Force/control value" column. Then change the value to the desired one in the red box, and click "Control Now" button (blue). Check the valid values in the table shown in [Speed Limit Valid Values](#speed-limit-valid-values) section.
-![Control Variable](resources/ControlVariable.png)
+  ![Control Variable](resources/ControlVariable.png)
 
-  1. For azimuth each unit is equivalent to 0.36deg/s. This is a value of 10 is equal to a maximun velocity in azimuth of 3.6deg/s.
-  2. For elevation each unit is equivalent to 1.44 deg/s. This is value of 2 is equal to a maximun velocity in elevaiton of 2.88 deg/s.
+  - For azimuth each unit is equivalent to 0.36deg/s. This is a value of 10 is equal to a maximum velocity in azimuth of 3.6deg/s.
+  - For elevation each unit is equivalent to 1.44 deg/s. This is value of 2 is equal to a maximum velocity in elevation of 2.88 deg/s.
 
-1. If the values are valid, the values shown in the "Current value" and "Force/control value" columns are the same. Otherwise the value will be limted to the fixed limit
-![Valid Values](resources/ValidValues.png)
+- If the values are valid, the values shown in the "Current value" and "Force/control value" columns are the same. Otherwise the value will be limited to the fixed limit
+
+  ![Valid Values](resources/ValidValues.png)
 
 ### Speed Limit Valid Values
 
-The values must be inside a range. This range was defined by AURA, but they do not ensure that the values inside this limits are totally safe for the camera. Please check the allowed maximun values in each situation
+The values must be inside a range. This range was defined by AURA, but they do not ensure that the values inside this limits are totally safe for the camera. Please check the allowed maximum values in each situation
 
 | Axis      | Velocity per unit | Allowed Max. value | Equivalent Maximum Velocity | Allowed Min. value | Equivalent Minimum Velocity |
 | --------- | ----------------- | ------------------ | --------------------------- | ------------------ | --------------------------- |
